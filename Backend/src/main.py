@@ -4,7 +4,8 @@ from .api.authentication import router as auth_router
 from fastapi.middleware.cors import CORSMiddleware
 
 from .db.dbutil import get_mongoDb
-
+from .api.geeksforgeeks import router as g4g_router
+from .api.codeforces import router as cf_router
 
 origins = [
     "http://localhost:3000",  # frontend URL
@@ -18,6 +19,10 @@ async def lifespan(app: FastAPI):
 
 app=FastAPI(lifespan=lifespan)
 app.include_router(auth_router)
+app.include_router(g4g_router)
+app.include_router(cf_router)
+
+
 
 
 app.add_middleware(
