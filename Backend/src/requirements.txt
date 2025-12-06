@@ -1,0 +1,13 @@
+pymongo
+fastapi-cloud-cli
+fastapi
+fastapi-cli
+pydantic_core
+pydantic
+pydantic-settings
+beautifulsoup4
+passlib
+PyJWT
+requests
+requests-oauthlib
+bcrypt==4.0.1 

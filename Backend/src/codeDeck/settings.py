@@ -12,5 +12,8 @@ class AppSettings(BaseSettings):
     MONGO_DB_URL:str
     MONGO_DB_NAME:str
     JWT_SECRET_KEY:str
+    JUDGE0_URL: str
+    JUDGE0_API_KEY: str
+    JUDGE0_RAPIDAPI_HOST: str
 
 settings=AppSettings()
